@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRayTracer.Core", "NRayTracer.Core\NRayTracer.Core.csproj", "{DF60A9C6-B37A-4D14-8EA1-630438F28CCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRayTracer.Tests", "NRayTracer.Tests\NRayTracer.Tests.csproj", "{3BE3279F-7078-48E2-B7F1-C337879014F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRayTracer.ProjectileDemo", "NRayTracer.ProjectileDemo\NRayTracer.ProjectileDemo.csproj", "{A800BA3D-51E7-45E4-AA7D-37A20491C774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DF60A9C6-B37A-4D14-8EA1-630438F28CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF60A9C6-B37A-4D14-8EA1-630438F28CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF60A9C6-B37A-4D14-8EA1-630438F28CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE3279F-7078-48E2-B7F1-C337879014F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE3279F-7078-48E2-B7F1-C337879014F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE3279F-7078-48E2-B7F1-C337879014F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE3279F-7078-48E2-B7F1-C337879014F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A800BA3D-51E7-45E4-AA7D-37A20491C774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A800BA3D-51E7-45E4-AA7D-37A20491C774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A800BA3D-51E7-45E4-AA7D-37A20491C774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A800BA3D-51E7-45E4-AA7D-37A20491C774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
