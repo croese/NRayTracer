@@ -1,31 +1,30 @@
 ﻿using NRayTracer.Core;
 using System;
-using Tuple = NRayTracer.Core.Tuple;
 
 namespace NRayTracer.ProjectileDemo
 {
     internal class Projectile
     {
-        public Projectile(Tuple4 startPoint, Tuple4 initialVelocityVector)
+        public Projectile(Vector3 startPoint, Vector3 initialVelocityVector)
         {
             Position = startPoint;
             Velocity = initialVelocityVector;
         }
 
-        public Tuple4 Position { get; }
-        public Tuple4 Velocity { get; }
+        public Vector3 Position { get; }
+        public Vector3 Velocity { get; }
     }
 
     internal class World
     {
-        public World(Tuple4 gravity, Tuple4 wind)
+        public World(Vector3 gravity, Vector3 wind)
         {
             Gravity = gravity;
             Wind = wind;
         }
 
-        public Tuple4 Gravity { get; }
-        public Tuple4 Wind { get; }
+        public Vector3 Gravity { get; }
+        public Vector3 Wind { get; }
     }
 
     internal class Program
@@ -34,8 +33,8 @@ namespace NRayTracer.ProjectileDemo
         {
             Console.WriteLine("Projectile Demo");
 
-            var p = new Projectile(Tuple.NewPoint(0, 1, 0), Tuple.NewVector(1, 1, 0).Normalized);
-            var w = new World(Tuple.NewVector(0, -0.1, 0), Tuple.NewVector(-0.01, 0, 0));
+            var p = new Projectile(new Vector3(0, 1, 0), new Vector3(1, 1, 0).Normalized);
+            var w = new World(new Vector3(0, -0.1, 0), new Vector3(-0.01, 0, 0));
             var numTicks = 0;
             Console.WriteLine($"Y: {p.Position.Y}, Ticks: {numTicks}");
             while (p.Position.Y > 0)
